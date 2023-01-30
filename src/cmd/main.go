@@ -136,7 +136,7 @@ func (t *toot) post(client mastodon.Client) error {
   var toot = mastodon.Toot{
     Status: buildToot(),
     Language: "de",
-    Visibility: "direct",
+    Visibility: "unlisted",
   }
 
   if t.prevToot != "" {
